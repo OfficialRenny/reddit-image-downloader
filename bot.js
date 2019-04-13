@@ -22,8 +22,8 @@ r.getSubreddit(subreddit).getTop({time: timeperiod}).fetchAll().then((res) => {
 		if (index > res.length) return;
 		curPost = res[index];
 		if (curPost == null || undefined) return download(index + 1);
-		if ((curPost['is_self'] == false) && !(curPost['is_self'] == null || undefined) && validFiletypes.contains(re.exec(curPost.url).toLowerCase())) {
-			var ext = re.exec(curPost.url);
+		var ext = re.exec(curPost.url);
+		if ((curPost['is_self'] == false) && !(curPost['is_self'] == null || undefined) && validFiletypes.includes(ext[1])) {
 			wget({
 					url: curPost['url'],
 					dest: `./images/${curPost.title}.${ext}`,
