@@ -1,0 +1,16 @@
+{
+  "name": "thighbot",
+  "version": "1.0.0",
+  "description": "A bot to scrape r/thighdeology",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "node-wget": "^0.4.3",
+    "snoowrap": "^1.15.2"
+  }
+}
