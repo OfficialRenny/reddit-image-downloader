@@ -1,7 +1,7 @@
 {
-  "name": "thighbot",
+  "name": "reddit-image-downloader",
   "version": "1.0.0",
-  "description": "A bot to scrape r/thighdeology",
+  "description": "A bot to scrape subreddits",
   "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^7.0.0",
+    "minimist": "^1.2.0",
     "node-wget": "^0.4.3",
+    "sanitize-filename": "^1.6.3",
     "snoowrap": "^1.15.2"
   }
 }
