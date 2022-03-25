@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^7.0.0",
-    "minimist": "^1.2.2",
+    "minimist": "^1.2.6",
     "node-wget": "^0.4.3",
     "sanitize-filename": "^1.6.3",
     "snoowrap": "^1.15.2"
